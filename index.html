@@ -11,9 +11,12 @@
   <!-- Header -->
   <header class="bg-white shadow-md py-6 mb-8">
     <div class="container mx-auto px-6 flex items-center justify-between">
-      <div>
-        <h1 class="text-3xl font-bold">Dao Viet Anh</h1>
-        <p class="text-gray-600">AI Engineer • LLM Researcher • Full‑stack Developer</p>
+      <div class="flex items-center space-x-4">
+        <img src="avatar.jpg" alt="Avatar" class="w-16 h-16 rounded-full object-cover border border-gray-300" />
+        <div>
+          <h1 class="text-3xl font-bold">Dao Viet Anh</h1>
+          <p class="text-gray-600">AI Engineer • LLM Researcher • Full‑stack Developer</p>
+        </div>
       </div>
       <div>
         <a href="#contact" class="text-blue-600 hover:underline mr-4">Contact</a>
@@ -99,11 +102,37 @@
     </div>
   </section>
 
+  <!-- Research Domains -->
+  <section id="research" class="container mx-auto px-6 mb-12">
+    <h2 class="text-2xl font-semibold mb-4">Research Domains</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+	<img src="cv.jpeg" alt="Computer Vision illustration" class="w-full h-32 object-cover rounded-md mb-4">
+        <h3 class="font-bold mb-2">Computer Vision</h3>
+        <p class="text-gray-700">Algorithms and pipelines for detection, segmentation, reconstruction.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+	<img src="nerf.png" alt="NeRF visualization" class="w-full h-32 object-cover rounded-md mb-4">
+        <h3 class="font-bold mb-2">Neural Radiance Field (NeRF)</h3>
+        <p class="text-gray-700">3D scene representation and view synthesis using NeRF techniques.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+	<img src="gs.jpeg" alt="Gaussian Splatting rendering" class="w-full h-32 object-cover rounded-md mb-4">
+        <h3 class="font-bold mb-2">Gaussian Splatting</h3>
+        <p class="text-gray-700">Research on point-based 3D reconstruction, rendering with Gaussian splats.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+	<img src="llm.png" alt="LLM Agents diagram" class="w-full h-32 object-cover rounded-md mb-4">
+        <h3 class="font-bold mb-2">LLM Agents</h3>
+        <p class="text-gray-700">Design and orchestration of agent-based workflows and RAG-powered systems.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Experience -->
   <section id="experience" class="container mx-auto px-6 mb-12">
     <h2 class="text-2xl font-semibold mb-4">Professional Experience</h2>
     <div class="space-y-8">
-      <!-- Example entry -->
       <div>
         <div class="flex justify-between items-center">
           <h3 class="font-semibold">AI Lecturer / Researcher · UET VNU</h3>
@@ -114,8 +143,58 @@
           <li>Integrate LLMs and agents for document‑understanding workflows</li>
         </ul>
       </div>
-      <!-- Repeat similarly for other roles: Samsung SDS, VKIST, Hyperlogy, Velacorp -->
-      <!-- ... -->
+      <div>
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold">AI Engineer · Samsung SDS</h3>
+          <span class="text-gray-600">Dec 2023 – May 2025</span>
+        </div>
+        <ul class="list-disc list-inside ml-4 text-gray-700">
+          <li>Deploy OCR/NLP AI services on Kubernetes and AWS</li>
+          <li>Build fullstack web apps with Django, React.js, Celery</li>
+          <li>Optimize pipelines and production CI/CD workflows</li>
+        </ul>
+      </div>
+      <div>
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold">Research Engineer · VKIST</h3>
+          <span class="text-gray-600">Jul 2021 – Dec 2023</span>
+        </div>
+        <ul class="list-disc list-inside ml-4 text-gray-700">
+          <li>3D face recognition under unconstrained settings</li>
+          <li>Contributed to 2 papers and a facial recognition patent</li>
+          <li>Built image pipelines with Poliface dataset</li>
+        </ul>
+      </div>
+      <div>
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold">MLOps Engineer · VKIST + VNU ITI</h3>
+          <span class="text-gray-600">Mar 2022 – Dec 2023</span>
+        </div>
+        <ul class="list-disc list-inside ml-4 text-gray-700">
+          <li>Deployed DGX-A100 Kubernetes cluster using MIG</li>
+          <li>Managed Kubeflow and multi-user HPC environment</li>
+        </ul>
+      </div>
+      <div>
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold">AI Engineer · Hyperlogy</h3>
+          <span class="text-gray-600">Jan 2021 – Jun 2021</span>
+        </div>
+        <ul class="list-disc list-inside ml-4 text-gray-700">
+          <li>Developed FaceNet-based EKYC onboarding service</li>
+          <li>Built document verification using OCR and segmentation</li>
+        </ul>
+      </div>
+      <div>
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold">Fullstack Developer · Velacorp</h3>
+          <span class="text-gray-600">Sep 2018 – Dec 2020</span>
+        </div>
+        <ul class="list-disc list-inside ml-4 text-gray-700">
+          <li>Created microservices for logistics system</li>
+          <li>Maintained CI/CD pipelines and Docker deployment</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -123,19 +202,24 @@
   <section id="projects" class="container mx-auto px-6 mb-12">
     <h2 class="text-2xl font-semibold mb-4">Notable Projects & Publications</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <h3 class="font-semibold mb-2">Face Recognition System (VKIST)</h3>
-        <p class="text-gray-700 mb-2">
-          Built 3D face alignment & reconstruction with PCA, Superpoint, Homography. Published two papers and contributed to a patent.
-        </p>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="project1.webp" alt="Face Recognition" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="font-semibold mb-2">Face Recognition System (VKIST)</h3>
+          <p class="text-gray-700 mb-2">
+            Built 3D face alignment & reconstruction with PCA, Superpoint, Homography. Published two papers and contributed to a patent.
+          </p>
+        </div>
       </div>
-      <div class="bg-white rounded-lg shadow-md p-6">
-        <h3 class="font-semibold mb-2">EKYC & IDP Solutions</h3>
-        <p class="text-gray-700 mb-2">
-          Developed face and document verification pipelines (FaceNet, ANN, OCR segmentation), deployed via Django/React, optimized inference & CI/CD.
-        </p>
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="project2.jpg" alt="EKYC" class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="font-semibold mb-2">EKYC & IDP Solutions</h3>
+          <p class="text-gray-700 mb-2">
+            Developed face and document verification pipelines (FaceNet, ANN, OCR segmentation), deployed via Django/React, optimized inference & CI/CD.
+          </p>
+        </div>
       </div>
-      <!-- More projects or open-source links -->
     </div>
   </section>
 
